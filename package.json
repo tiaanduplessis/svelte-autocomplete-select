@@ -1,0 +1,43 @@
+{
+  "name": "svelte-autocomplete-select",
+  "description": "Flexible, zero-dependency Autocomplete component for Svelte",
+  "version": "1.0.0",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
+  },
+  "keywords": [
+    "svelte",
+    "svelte-autocomplete",
+    "svelte-combobox",
+    "svelte-select",
+    "sapper",
+    "sapper-autocomplete",
+    "sapper-combobox",
+    "sapper-select"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "sirv-cli": "^1.0.11",
+    "svelte": "^3.32.1"
+  },
+  "peerDependencies": {
+    "svelte": "3"
+  }
+}
