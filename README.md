@@ -13,6 +13,7 @@
 - [Demo](#demo)
 - [Usage](#usage)
 - [Install](#install)
+- [Credits](#credits)
 - [Contribute](#contribute)
 - [License](#License)
 
@@ -43,6 +44,10 @@ $ npm install svelte-autocomplete-select
 $ # OR
 $ yarn add svelte-autocomplete-select
 ```
+
+## Credits
+
+This package is based on [simply-svelte-autocomplete](https://github.com/themarquisdesheric/simply-svelte-autocomplete)
 
 ## Contribute
 
