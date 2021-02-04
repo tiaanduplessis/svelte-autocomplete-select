@@ -125,14 +125,19 @@
     right: 0;
     top: 2rem;
     list-style-type: none;
-    border: 1px solid #bebebe;
-    background-color: #fff;
+    border: 1px solid transparent;
+    background-color: transparent;
     color: #212121;
     border-radius: 0 0 .1rem .1rem;
     padding-left: 0;
     margin: 0;
     z-index: 10;
     text-align: left;
+  }
+
+  :global(.svelte-autocomplete-select-list.has-options) {
+    border-color: #bebebe;
+    background-color: #fff;
   }
 
   :global(.svelte-autocomplete-select-option) {
@@ -178,7 +183,7 @@
       aria-owns={listId}
     >
       <div class="svelte-autocomplete-select-overlay {classes.overlay ?? ''}" on:click={hideResults} />
-      <ul id={listId} class="svelte-autocomplete-select-list {classes.list ?? ''}" style="top: {containerHeight}px;" role="listbox">
+      <ul id={listId} class="svelte-autocomplete-select-list {classes.list ?? ''} {matches?.length > 0 ? 'has-options' : ''}" style="top: {containerHeight}px;" role="listbox">
         {#each matches as match, index (match)}
           <slot matches={matches} match={match} index={index} handleSubmit={handleSubmit}>
             <li
