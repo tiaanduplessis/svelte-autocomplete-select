@@ -1,7 +1,7 @@
 {
   "name": "svelte-autocomplete-select",
   "description": "Flexible, zero-dependency Autocomplete component for Svelte",
-  "version": "1.0.0",
+  "version": "0.0.0-dev",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
