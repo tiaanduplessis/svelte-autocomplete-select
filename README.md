@@ -10,14 +10,19 @@
 
 ## Table of Contents
 
+- [Demo](#demo)
 - [Usage](#usage)
 - [Install](#install)
 - [Contribute](#contribute)
 - [License](#License)
 
+## Demo
+
+[Check it out](https://svelte-autocomplete-select.netlify.app/)
+
 ## Usage
 
-```html
+```svelte
 <script>
      import AutocompleteSelect from "svelte-autocomplete-select";
 </script>
