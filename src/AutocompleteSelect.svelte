@@ -89,6 +89,8 @@
     border: 1px solid #bebebe;
     border-radius: 0.25rem;
     padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
   }
 
   :global(.svelte-autocomplete-select-input) {
