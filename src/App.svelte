@@ -111,7 +111,7 @@
     placeholder="With custom options"
     let:match
     let:handleSubmit>
-    <li style="padding: 1rem;" on:click={() => handleSubmit(match)}>
+    <li slot="option" style="padding: 1rem;" on:click={() => handleSubmit(match)}>
       😀
       <strong>{match}</strong>
     </li>
